@@ -1,7 +1,9 @@
-import Sto from './klase/Sto';
+import Sto from './klase/Sto'
 
 const sto1 = new Sto('Sto u uglu')
 const sto2 = new Sto('Separe')
 
 sto1.slobodan = false
-console.log(sto1, sto2)
+
+sto1.getMeni()
+sto1.dodajPice(1)
