@@ -10,4 +10,6 @@ sto1.slobodan = false
 // probamo metode
 
 sto1.getMeni()
-sto1.dodajPice(1)
+sto1.prikaziMeni()
+// sto1.zatvoriMeni()
+// sto2.prikaziMeni()
