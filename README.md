@@ -11,6 +11,13 @@ npm install
 npm start
 ```
 
+## Produkcija
+
+```
+npm install
+npm run bundle
+```
+
 ## Tehnologije
 
 https://webpack.js.org/
