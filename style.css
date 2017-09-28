@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+main > div {
+  display: flex;
+  background-color: #7b6149;
+  /*background-color: #1D2027;*/
+  margin: 2% 3%;
+  width: 250px;
+  min-height: 250px;
+  box-shadow: 0 4px 10px 0 #d8d8b9, 0 6px 20px 0 #d8d8b9;
+  border-radius: 5px;
+}
+
+p.broj {
+  align-self: flex-end;
+  margin: 0 0 0 10px;
+  font-size: 7.5em;
+  font-weight: 600;
+  color: #121419;
+  /*color: #7b6149;*/
+} 
