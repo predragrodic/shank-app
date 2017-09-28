@@ -1,5 +1,5 @@
 import pica from '../podaci/pica'
-const meniId = 'meni'
+const meni = document.getElementById('meni')
 
 export default class Sto {
   constructor(ime) {
@@ -21,25 +21,27 @@ export default class Sto {
     for (var i = 0; i < pica.length; i++) {
       const div = document.createElement('div')
       div.innerHTML = `
-        ${pica[i].naziv}: ${pica[i].cena}
+        <p>${pica[i].naziv}: ${pica[i].cena}</p>
       `
       div.dataset.sifra = pica[i].sifra
-      div.onclick = () => this.dodajPice(div.dataset.sifra)
-      document.getElementById(meniId).appendChild(div)
+      div.onclick = () => {
+        this.dodajPice(div.dataset.sifra)
+      }
+      meni.appendChild(div)
     }
   }
 
   zatvoriMeni() {
-    document.getElementById(meniId).innerHTML = ''
+    meni.innerHTML = ''
   }
 
   reset() {
-    // briše sva stanja, poziva getMeni i render
+    // briše sva stanja, poziva getMeni i prikaziMeni
   }
 
   dodajPice(sifraPica) {
     console.log(this.ime, 'sifra pica', sifraPica)
     // dodaje pice na aktivaPorudzbina
-    // this.aktivaPorudzbina dodaj sifraPica
+    // aktivaPorudzbina je asocijativni niz sifra: kolicina
   }
 }
