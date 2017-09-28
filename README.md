@@ -18,6 +18,10 @@ npm install
 npm run bundle
 ```
 
-## Tehnologije
+## TODO
 
-https://webpack.js.org/
+- Srediti stolove u CSS-u
+- implementirati metodu dodajPice()
+- implementirati metodu reset()
+- stilizovati kartu pica + dodati slike u podatke i prikazi u petlji
+- minifikovati izlazni bundle.js fajl
