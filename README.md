@@ -20,8 +20,9 @@ npm run bundle
 
 ## TODO
 
-- Srediti stolove u CSS-u
+- Srediti stolove u CSS-u ✔
 - implementirati metodu dodajPice()
 - implementirati metodu reset()
 - stilizovati kartu pica + dodati slike u podatke i prikazi u petlji
 - minifikovati izlazni bundle.js fajl
+- napraviti dinamičko pravljenje stolova (koliki broj stolova unesemo, toliko ih pravi)
