@@ -7,6 +7,7 @@ export default class Sto {
     this.porudzbine = []
     this.aktivaPorudzbina = {}
     this.ime = ime
+    this.reset()
   }
 
   getMeni() {
@@ -35,8 +36,12 @@ export default class Sto {
     meni.innerHTML = ''
   }
 
-  reset() {
-    // briše sva stanja, poziva getMeni i prikaziMeni
+    reset() {
+      this.getMeni()
+      this.prikaziMeni()
+      this.aktivaPorudzbina = {}
+      console.log("Reset")
+    }
   }
 
   dodajPice(sifraPica) {
