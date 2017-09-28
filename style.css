@@ -4,11 +4,6 @@ body{
   font-family: sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -34,26 +29,4 @@ p.broj {
   font-weight: 600;
   color: #121419;
   /*color: #7b6149;*/
-}
-
-.racun {
-  display: flex;
-  background-color: #fff;
-  width: inherit;
-  min-height: inherit;
-  margin-left: -30px;
-}
-
-.racun > p {
-  align-self: flex-end;
-  padding-bottom: 25px;
-  color: #121419;
-  font-weight: 600;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-}
-
-.racun > div {
-  align-self: baseline;
-  padding: 15px 15px 15px 0;
-}
+} 
